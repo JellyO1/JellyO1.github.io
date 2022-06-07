@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('ttf');
+  }
+}
+
+@media print {
+  .table-auto.language {
+    page-break-before: always;
+  }
+}
+
+.dark a:hover {
+  @apply text-teal-400;
+}
+
+.post {
+  & p {
+    @apply mt-4;
+  }
+
+  & h1 {
+    @apply text-4xl mt-8;
+  }
+
+  & h2 {
+    @apply text-3xl mt-8;
+  }
+
+  & h3 {
+    @apply text-2xl mt-8;
+  }
+
+  & h4 {
+    @apply text-xl mt-8;
+  }
+
+  & ul {
+    @apply list-disc list-inside mt-2;
+  }
+
+  & ol {
+    @apply list-decimal list-inside mt-2;
+  }
+
+  & li {
+    @apply ml-4 my-2;
+  }
+}
+
+.table-auto.language {
+  & thead{
+    @apply border-teal-400 border-b-4;
+  }
+
+  & th {
+    @apply p-4;
+  }
+
+  & td {
+    @apply p-4 text-center;
+  }
+}
+
+// $backgroundColor: #ffffff;
+// $bodyColor: #000000;
+// $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+// body {
+//   background: $backgroundColor;
+//   color: $bodyColor;
+//   font-family: $bodyFont;
+// }

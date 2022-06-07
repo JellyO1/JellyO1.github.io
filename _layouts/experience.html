@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="post">
+    <h1 class="text-teal-400 text-xl">{{ page.title }}</h1>
+    <h2 class="italic">{{ page.start_date }} -
+        {% if page.end_date %}
+            {{ page.end_date }}
+        {% else %}
+            Current
+        {% endif %}
+    </h2>
+    <div class="py-2">
+        {{content}}
+    </div>
+</div>
