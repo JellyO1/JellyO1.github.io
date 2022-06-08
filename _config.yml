@@ -3,6 +3,13 @@ url: "https://jellyo1.github.io" # the base hostname & protocol for your site, e
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "ToBeDefined Home" # the name of your site, e.g. ACME Corp.
 
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+
+  include: ["node_modules/tailwindcss"]
+
 assets:
   sources:
     - assets/fonts
