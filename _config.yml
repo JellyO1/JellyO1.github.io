@@ -8,5 +8,8 @@ assets:
     - assets/fonts
     - assets/images
 
+postcss:
+  cache: false
+
 plugins:
   - jekyll-postcss-v2
