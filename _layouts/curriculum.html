@@ -12,7 +12,7 @@ layout: default
             {{ page.employer }}
             {% endif %}
         </h3>
-        <div class="flex justify-center mx-auto mt-2 gap-3">
+        <div class="flex flex-wrap justify-center mx-auto mt-2 gap-3">
             <div class="flex gap-1">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                     <title>Email</title>
@@ -124,26 +124,28 @@ layout: default
         {% endif %}
         <div class="flex flex-col gap-3">
             <h1 class="dark:bg-neutral-900 self-start p-2 rounded-md dark:text-teal-400 text-2xl">Language Skills</h1>
-            <table class="table-auto language dark:bg-neutral-900 rounded-md overflow-clip">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Listening</th>
-                        <th>Reading</th>
-                        <th>Spoken</th>
-                        <th>Writing</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>English</td>
-                        <td>C2</td>
-                        <td>C2</td>
-                        <td>C1</td>
-                        <td>C2</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="overflow-x-auto">
+                <table class="table-auto language dark:bg-neutral-900 rounded-md">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Listening</th>
+                            <th>Reading</th>
+                            <th>Spoken</th>
+                            <th>Writing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>English</td>
+                            <td>C2</td>
+                            <td>C2</td>
+                            <td>C1</td>
+                            <td>C2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
