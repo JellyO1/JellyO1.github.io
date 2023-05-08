@@ -6,11 +6,10 @@ layout: default
     <div>
         <img class="mx-auto block h-24 rounded-full" src="{{ page.profilePic }}" alt="Profile Picture" />
         <h2 class="mt-2 text-center text-xl">{{ page.profileName }}</h2>
-        <h3 class="text-center italic dark:text-gray-200">{{ page.role }}
-            {% if page.employer %}
+        <h3 class="text-center italic dark:text-gray-200">
+            {{ site.categories.experience.first.title }}
             at
-            {{ page.employer }}
-            {% endif %}
+            {{ site.categories.experience.first.employer }}
         </h3>
         <div class="flex flex-wrap justify-center mx-auto mt-2 gap-3">
             <div class="flex gap-1">
