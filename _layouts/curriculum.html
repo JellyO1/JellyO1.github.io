@@ -52,7 +52,7 @@ layout: default
             <h1 class="bg-slate-200 dark:bg-neutral-900 self-start p-2 rounded-md text-teal-600 dark:text-teal-400 text-2xl">Work Experience</h1>
             {% for post in site.categories.experience %}
             <div class="bg-slate-200 dark:bg-neutral-900 rounded-md overflow-clip">
-                <a class="hover:text-teal-800 flex justify-between print:break-inside-avoid" href="{{ post.url }}">
+                <a class="flex justify-between print:break-inside-avoid" href="{{ post.url }}">
                         <div class="text-white dark:text-black self-start p-2 flex-shrink bg-teal-600 hover:bg-teal-800 dark:bg-teal-400 dark:hover:bg-teal-700 rounded-br-2xl">
                             <span class="text-xl">{{ post.title }}</span>
                             <span class="text-md italic">
@@ -80,7 +80,7 @@ layout: default
             <h1 class="bg-slate-200 dark:bg-neutral-900 self-start p-2 rounded-md text-teal-600 dark:text-teal-400 text-2xl">Education & Training</h1>
             {% for post in site.categories.education %}
             <div class="bg-slate-200 dark:bg-neutral-900 rounded-md overflow-clip">
-                <a class="hover:text-teal-800" href="{{ post.url }}">
+                <a href="{{ post.url }}">
                     <div class="flex justify-between">
                         <div
                             class="flex flex-col text-white dark:text-black p-2 flex-shrink bg-teal-600 hover:bg-teal-800 dark:bg-teal-400 dark:hover:bg-teal-700 rounded-br-2xl">
@@ -123,7 +123,7 @@ layout: default
         {% endif %}
         <div class="flex flex-col gap-3">
             <h1 class="bg-slate-200 dark:bg-neutral-900 self-start p-2 rounded-md text-teal-600 dark:text-teal-400 text-2xl">Language Skills</h1>
-            <div class="overflow-x-auto">
+            <div class="overflow-x-auto ">
                 <table class="table-auto language bg-slate-200 dark:bg-neutral-900 rounded-md">
                     <thead>
                         <tr>

@@ -10,11 +10,9 @@
     font-family: 'Roboto';
     src: url('../fonts/Roboto/Roboto-Regular.ttf') format('ttf');
   }
-}
 
-@media print {
-  .table-auto.language {
-    page-break-before: always;
+  a:hover {
+    @apply text-teal-800;
   }
 }
 
