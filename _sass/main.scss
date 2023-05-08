@@ -1,6 +1,3 @@
----
----
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,6 +7,12 @@
     font-family: 'Roboto';
     src: url('../fonts/Roboto/Roboto-Regular.ttf') format('ttf');
   }
+
+  /* purgecss start ignore */
+  a {
+    @apply hover:text-teal-800;
+  }
+  /* purgecss end ignore */
 }
 
 @media print {

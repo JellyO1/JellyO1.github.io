@@ -49,11 +49,11 @@ layout: default
     </div>
     <div class="flex flex-col max-w-5xl mx-auto gap-8">
         <div class="flex flex-col gap-3">
-            <h1 class="dark:bg-neutral-900 self-start p-2 rounded-md dark:text-teal-400 text-2xl">Work Experience</h1>
+            <h1 class="bg-slate-200 dark:bg-neutral-900 self-start p-2 rounded-md text-teal-600 dark:text-teal-400 text-2xl">Work Experience</h1>
             {% for post in site.categories.experience %}
-            <div class="dark:bg-neutral-900 rounded-md overflow-clip">
-                <a class="flex justify-between print:break-inside-avoid" href="{{ post.url }}">
-                        <div class="dark:text-black self-start p-2 flex-shrink dark:bg-teal-400 dark:hover:bg-teal-700 rounded-br-2xl">
+            <div class="bg-slate-200 dark:bg-neutral-900 rounded-md overflow-clip">
+                <a class="hover:text-teal-800 flex justify-between print:break-inside-avoid" href="{{ post.url }}">
+                        <div class="text-white dark:text-black self-start p-2 flex-shrink bg-teal-600 hover:bg-teal-800 dark:bg-teal-400 dark:hover:bg-teal-700 rounded-br-2xl">
                             <span class="text-xl">{{ post.title }}</span>
                             <span class="text-md italic">
                                 at
@@ -77,13 +77,13 @@ layout: default
             {% endfor %}
         </div>
         <div class="flex flex-col gap-3">
-            <h1 class="dark:bg-neutral-900 self-start p-2 rounded-md dark:text-teal-400 text-2xl">Education & Training</h1>
+            <h1 class="bg-slate-200 dark:bg-neutral-900 self-start p-2 rounded-md text-teal-600 dark:text-teal-400 text-2xl">Education & Training</h1>
             {% for post in site.categories.education %}
-            <div class="dark:bg-neutral-900 rounded-md overflow-clip">
-                <a href="{{ post.url }}">
+            <div class="bg-slate-200 dark:bg-neutral-900 rounded-md overflow-clip">
+                <a class="hover:text-teal-800" href="{{ post.url }}">
                     <div class="flex justify-between">
                         <div
-                            class="flex flex-col dark:text-black p-2 flex-shrink dark:bg-teal-400 dark:hover:bg-teal-700 rounded-br-2xl">
+                            class="flex flex-col text-white dark:text-black p-2 flex-shrink bg-teal-600 hover:bg-teal-800 dark:bg-teal-400 dark:hover:bg-teal-700 rounded-br-2xl">
                             <span class="text-xl">{{ post.title }}</span>
                             <span class="text-md italic">{{ post.school }}
                                 -
@@ -106,7 +106,7 @@ layout: default
         </div>
         {% if site.categories.certifications %}
         <div class="flex flex-col gap-3">
-            <h1 class="dark:bg-neutral-900 self-start p-2 rounded-md dark:dark:-teal-400 text-2xl">Certifications</h1>
+            <h1 class="dark:bg-neutral-900 self-start p-2 rounded-md dark:text-teal-400 text-2xl">Certifications</h1>
             {% for post in site.categories.certifications %}
             <div class="dark:bg-neutral-900 rounded-md overflow-clip">
                 <a href="{{ post.url }}">
@@ -122,9 +122,9 @@ layout: default
         </div>
         {% endif %}
         <div class="flex flex-col gap-3">
-            <h1 class="dark:bg-neutral-900 self-start p-2 rounded-md dark:text-teal-400 text-2xl">Language Skills</h1>
+            <h1 class="bg-slate-200 dark:bg-neutral-900 self-start p-2 rounded-md text-teal-600 dark:text-teal-400 text-2xl">Language Skills</h1>
             <div class="overflow-x-auto">
-                <table class="table-auto language dark:bg-neutral-900 rounded-md">
+                <table class="table-auto language bg-slate-200 dark:bg-neutral-900 rounded-md">
                     <thead>
                         <tr>
                             <th></th>
