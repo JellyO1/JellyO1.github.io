@@ -6,10 +6,20 @@ start_date: 2018-07-20
 excerpt_separator: <!--more-->
 ---
 
-- Co-lead developer for Unitel NetShows, a mobile video streaming app for seamless viewing experiences using .NET 6 WebAPI, .NET Identity, EF, Azure Media Services, Azure Storage, Azure App Service and SQL Express for fast data retrieval. The app's frontend was created with Flutter for a cross-platform sleek interface. Configured the backend to upload media and setup transcoding jobs using the Media Services API v3. 
-- I have extensive experience in developing multiple WPF applications for controlling broadcast graphics in various events, including the Municipal Elections 2021 Interactive Touch application, ICF Canoe Events, SIC Notícias Interactive Touch application, RTP "Don't Forget the Lyrics," and more. These applications were designed to enable seamless control and management of broadcasting graphics, ensuring that each event runs smoothly and successfully.
-- Enhanced the existing broadcasting solution **InfoStudio** by fixing bugs and implementing new features to improve its functionality. One such feature I added was the NDI powered video graphics preview, which enabled users to preview their graphics in real-time, enhancing their ability to deliver high-quality broadcasts.
-- Contributed to the development of the in-house engine communication layer written in Python that sits upon the real-time engine TouchDesigner. Specifically, I have designed new systems, improved existing ones, and developed plugins to enhance the layer's functionality.
+- **Co-Lead Developer for Unitel NetShows (Mobile Video Streaming App):**
+    - Led the development of Unitel NetShows, a mobile video streaming app, using .NET 6 WebAPI, .NET Identity, EF, Azure Media Services, Azure Storage, Azure App Service, and SQL Express.
+    - Implemented a cross-platform frontend using Flutter for a sleek user interface.
+- **Lead Backend Developer for Automatica_ (Publicitary Video Generation and Deployment):**
+    - Spearheaded the development of Automatica_, a data-driven, automatic generation and deployment of publicitary video clips using .NET 6, .NET Identity, EF, Docker, K8s, gRPC and Azure.
+- **WPF Application Development for Broadcast Graphics Control:**
+    - Developed multiple WPF applications for controlling broadcast graphics for high-profile events, including Municipal Elections 2021 Interactive Touch application, ICF Canoe Events, SIC Notícias Interactive Touch application, RTP "Don't Forget the Lyrics," and more.
+    - Ensured seamless control and management of broadcasting graphics, contributing to the success of each event.
+- **Enhancement of InfoStudio (.NET Broadcasting Solution):**
+    - Improved InfoStudio by fixing bugs and adding new features to enhance functionality.
+    - Introduced a real-time NDI-powered video graphics preview feature, enhancing broadcast quality.
+- **In-House Engine Development (TouchDesigner-Based):**
+    - Redesigned the in-house engine layer built on top of the real-time engine TouchDesigner.
+    - Revamped the Python communication system, improved state management, implemented NDI signal management, and developed C++ plugins for added functionality.
 
 <!--more-->
 

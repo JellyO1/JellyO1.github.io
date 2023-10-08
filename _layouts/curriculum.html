@@ -81,9 +81,9 @@ layout: default
             {% for post in site.categories.education %}
             <div class="bg-slate-200 dark:bg-neutral-900 rounded-md overflow-clip">
                 <a href="{{ post.url }}">
-                    <div class="flex justify-between">
+                    <div class="flex justify-between ">
                         <div
-                            class="flex flex-col text-white dark:text-black p-2 flex-shrink bg-teal-600 hover:bg-teal-800 dark:bg-teal-400 dark:hover:bg-teal-700 rounded-br-2xl">
+                            class="flex flex-col text-white dark:text-black p-2 flex-shrink bg-teal-600 hover:bg-teal-800 dark:bg-teal-400 dark:hover:bg-teal-700 rounded-br-2xl print:break-inside-avoid">
                             <span class="text-xl">{{ post.title }}</span>
                             <span class="text-md italic">{{ post.school }}
                                 -
@@ -104,6 +104,27 @@ layout: default
             </div>
             {% endfor %}
         </div>
+        {% if site.categories.contributions %}
+        <div class="flex flex-col gap-3">
+            <h1 class="bg-slate-200 dark:bg-neutral-900 self-start p-2 rounded-md text-teal-600 dark:text-teal-400 text-2xl">Contributions</h1>
+            {% for post in site.categories.contributions %}
+            <div class="bg-slate-200 dark:bg-neutral-900 rounded-md overflow-clip">
+                <a href="{{ post.cont_url }}">
+                    <div class="flex justify-between">
+                        <div
+                            class="flex flex-col text-white dark:text-black p-2 flex-shrink bg-teal-600 hover:bg-teal-800 dark:bg-teal-400 dark:hover:bg-teal-700 rounded-br-2xl print:break-inside-avoid">
+                            <span class="text-xl">{{ post.title }}</span>
+                            <span class="text-md italic">{{ post.project }}</span> 
+                        </div>
+                        <div class="flex flex-col flex-shrink-0 p-2">
+                            <span>{{ post.date | date: '%b %Y' }}</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
         {% if site.categories.certifications %}
         <div class="flex flex-col gap-3">
             <h1 class="dark:bg-neutral-900 self-start p-2 rounded-md dark:text-teal-400 text-2xl">Certifications</h1>
