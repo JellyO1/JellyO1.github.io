@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta name="description" content="  Co-Lead Developer for Unitel NetShows (Mobile Video Streaming App):          Led the development of Unitel NetShows, a mobile video streaming app, using .N...">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Senior Software Developer</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body class="bg-white dark:bg-neutral-800 dark:text-white">
+    <nav class="flex mx-auto container print:hidden print:h-0">
+      <div class="w-full"></div>
+      <button onclick="toggleMode(this)" class="m-1 p-1 justify-end self-end w-8 h-8"><i id="modeIcon" class="fa-solid fa-sun fa-lg"></i></button>
+    </nav>
+    <div class="container mx-auto px-3 py-5">
+      <div class="post">
+    <h1 class="text-teal-400 text-xl">Senior Software Developer</h1>
+    <h2 class="italic">2018-07-20 -
+        
+            Current
+        
+    </h2>
+    <div class="py-2">
+        <ul>
+  <li><strong>Co-Lead Developer for Unitel NetShows (Mobile Video Streaming App):</strong>
+    <ul>
+      <li>Led the development of Unitel NetShows, a mobile video streaming app, using .NET 6 WebAPI, .NET Identity, EF, Azure Media Services, Azure Storage, Azure App Service, and SQL Server.</li>
+      <li>Implemented a cross-platform frontend using Flutter for a sleek user interface.</li>
+    </ul>
+  </li>
+  <li><strong>Fullstack Developer in modernization of InfoStudio Broadcast:</strong>
+    <ul>
+      <li>Led the development of the backend architecture using .NET 6, gRPC and Entity Framework.</li>
+      <li>Developed multiple clients using Electron and React.</li>
+    </ul>
+  </li>
+  <li><strong>Lead Backend Developer for Automatica_ (Publicitary Video Generation and Deployment):</strong>
+    <ul>
+      <li>Spearheaded the development of Automatica_, a data-driven, automatic generation and deployment of publicitary video clips using .NET 6, .NET Identity, EF, Docker, K8s, gRPC and Azure.</li>
+    </ul>
+  </li>
+  <li><strong>WPF Application Development for Broadcast Graphics Control:</strong>
+    <ul>
+      <li>Developed multiple WPF applications for controlling broadcast graphics for high-profile events, including Municipal Elections 2021 Interactive Touch application, ICF Canoe Events, SIC Notícias Interactive Touch application, RTP “Don’t Forget the Lyrics,” and more.</li>
+      <li>Ensured seamless control and management of broadcasting graphics, contributing to the success of each event.</li>
+    </ul>
+  </li>
+  <li><strong>Enhancement of InfoStudio (.NET Broadcasting Solution):</strong>
+    <ul>
+      <li>Improved InfoStudio by fixing bugs and adding new features to enhance functionality.</li>
+      <li>Introduced a real-time NDI-powered video graphics preview feature, enhancing broadcast quality.</li>
+    </ul>
+  </li>
+  <li><strong>In-House Engine Development (TouchDesigner-Based):</strong>
+    <ul>
+      <li>Redesigned the in-house engine layer built on top of the real-time engine TouchDesigner.</li>
+      <li>Revamped the Python communication system, improved state management, implemented NDI signal management, and developed C++ plugins for added functionality.</li>
+    </ul>
+  </li>
+</ul>
+
+<!--more-->
+
+
+    </div>
+</div>
+
+    </div>
+  </body>
+  <script>
+    updateMode();
+
+    function updateMode() {
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.querySelector('html').classList.add('dark')
+      } else {
+        document.querySelector('html').classList.remove('dark')
+      }
+
+      updateModeIcon(document.querySelector("#modeIcon"));
+    }
+
+    function updateModeIcon(i) {
+      if(localStorage.theme === "dark") {
+        i.classList.add('fa-moon');
+        i.classList.remove('fa-sun');
+      } else {
+        i.classList.remove('fa-moon');
+        i.classList.add('fa-sun');
+      }
+    }
+
+    function toggleMode(button) {
+      const i = button.querySelector('i');
+
+      if(localStorage.theme === "dark") {
+        localStorage.setItem('theme', 'light');
+        updateModeIcon(button);
+      } else {
+        localStorage.setItem('theme', 'dark');
+        updateModeIcon(button);
+      }
+
+      updateMode();
+    }
+  </script>
+</html>
